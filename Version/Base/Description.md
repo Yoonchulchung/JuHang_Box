@@ -1,5 +1,6 @@
 ### 주행박스 Base Version
-osrf/ros:melodic-desktop-full 위에 zsh 쉘과 기본 환경설정을 함.
+
+Base 버젼은 주행박스의 AI 개발을 위한 기본적인 환경설정이 되어있습니다. 
 
 version 생성시 아래와 같은 변수를 입력함.
 ```bash
@@ -53,4 +54,10 @@ turtlesim을 켜서 Host에서 정상적으로 GUI도 작동하는지 확인함.
 GUI가 정상적으로 작동하지 않으면 아래와 같은 코드를 Host에서 추가함.
 ```bash
 xhost +local:docker
+```
+
+---
+zsh 쉘을 사용하고 있기 때문에 zsh 쉘과 ROS 환경변수 설정을 해야함.
+```bash
+source /opt/ros/melodic/setup.zsh
 ```
