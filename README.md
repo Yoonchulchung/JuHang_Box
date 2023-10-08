@@ -12,7 +12,7 @@ xhost +local:docker # Host 에서
 ```
 
 #### ROS 환경변수:
-```
+```bash
 source /opt/ros/melodic/setup.zsh # Container 안에서
 ```
 
